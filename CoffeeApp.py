@@ -120,5 +120,21 @@ if __name__ == "__main__":
     app = BrewHavenApp(root)
     root.mainloop()
 
+from PIL import Image, ImageTk
+
+def set_background(self):
+    bg_img = Image.open("coffee_bg.jpg")  # Add a café background image
+    bg_img = bg_img.resize((800, 600))
+    self.bg_photo = ImageTk.PhotoImage(bg_img)
+    bg_label = tk.Label(self.root, image=self.bg_photo)
+    bg_label.place(x=0, y=0, relwidth=1, relheight=1)
+self.menu.update({
+    "Croissant": 80,
+    "Brownie": 100,
+    "Cheesecake": 150,
+    "Sandwich": 120
+})
+
+
 
 
