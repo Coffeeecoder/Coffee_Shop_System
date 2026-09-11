@@ -139,6 +139,12 @@ def calculate_discount(self, total):
     if total > 500:
         return total * 0.1  # 10% discount
     return 0
+    def animate_steam(self, canvas):
+    for i in range(20):
+        canvas.create_text(250, 150-i*5, text="~", font=("Helvetica", 20), fill="gray")
+        canvas.update()
+        time.sleep(0.1)
+
 
 
 
