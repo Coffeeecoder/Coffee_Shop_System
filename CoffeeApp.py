@@ -147,4 +147,3 @@ def calculate_discount(self, total):
 
 
 
-
