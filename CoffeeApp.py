@@ -135,6 +135,10 @@ self.menu.update({
     "Sandwich": 120
 })
 
+def calculate_discount(self, total):
+    if total > 500:
+        return total * 0.1  # 10% discount
+    return 0
 
 
 
